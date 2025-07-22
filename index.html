@@ -53,6 +53,15 @@
       clip-path: polygon(100% 0, 0 0, 100% 100%);
     }
   </style>  
+  <style>
+    @media (max-width: 768px) {
+      .mobile-hero-fit {
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: center top !important;
+      }
+    }
+  </style>  
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -76,7 +85,7 @@
   </div>
 
   <!-- Hero Section -->
-  <section class="relative h-[90vh] bg-gray-300 flex items-center justify-center text-center text-white"
+  <section class="relative h-[90vh] mobile-hero-fit bg-gray-300 flex items-center justify-center text-center text-white"
   style="background-image: url('images/header.jpg'); background-size: cover; background-position: center;">
     <div class="bg-black/40 absolute inset-0"></div>
     <div class="relative z-10 max-w-3xl">

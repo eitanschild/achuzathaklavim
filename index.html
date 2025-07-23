@@ -65,17 +65,30 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- Header -->
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-      <h1 class="text-xl font-bold text-primary">אחוזת הכלבים</h1>
-      <nav class="hidden md:flex gap-6 text-sm text-secondary font-semibold">
-        <a href="#services" class="hover:text-primary">שירותים</a>
-        <a href="#reviews" class="hover:text-primary">ביקורות</a>
-        <a href="#contact" class="hover:text-primary">צור קשר</a>
-      </nav>
-    </div>
-  </header>
+<!-- Header -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <h1 class="text-xl font-bold text-primary">אחוזת הכלבים</h1>
+
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden text-secondary text-2xl" id="menu-toggle">☰</button>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex gap-6 text-sm text-secondary font-semibold">
+      <a href="#services" class="hover:text-primary">שירותים</a>
+      <a href="#reviews" class="hover:text-primary">ביקורות</a>
+      <a href="#contact" class="hover:text-primary">צור קשר</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Nav -->
+  <nav id="mobile-menu" class="md:hidden hidden flex-col gap-4 text-sm text-secondary font-semibold px-6 pb-4">
+    <a href="#services" class="hover:text-primary">שירותים</a>
+    <a href="#reviews" class="hover:text-primary">ביקורות</a>
+    <a href="#contact" class="hover:text-primary">צור קשר</a>
+  </nav>
+</header>
+
 
   <!-- Floating Tab Nav -->
   <div class="floating-nav hidden md:block">
@@ -303,6 +316,16 @@
   setInterval(nextReview, 5000);
   renderReview(currentReview);
 </script>
+
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
 
 </body>
 </html>

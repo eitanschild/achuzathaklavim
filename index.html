@@ -226,36 +226,49 @@
   </a>
 </div>
 
-  <!--BEFFORE_VS_AFTER-->
-  <section id="before-after" class="py-20 px-6 max-w-6xl mx-auto">
-    <h3 class="text-3xl font-bold text-center text-secondary mb-12">לפני ואחרי</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+<!-- BEFORE & AFTER Section -->
+<section id="before-after" class="py-20 px-6 max-w-6xl mx-auto">
+  <h3 class="text-3xl font-bold text-center text-secondary mb-12">לפני ואחרי</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    
+    <!-- Card 1 -->
+    <div class="relative w-full aspect-square overflow-hidden rounded-2xl shadow-lg group">
+      <!-- AFTER image -->
+      <img src="images/after1.jpg" class="absolute top-0 left-0 w-full h-full object-cover z-0" />
       
-      <!-- Card 1 -->
-      <div class="relative w-full aspect-square overflow-hidden rounded-2xl shadow-lg group">
-        <img src="images/after1.jpg" class="absolute top-0 left-0 w-full h-full object-cover" />
-        <img src="images/before1.jpg"
-             class="absolute top-0 left-0 w-full h-full object-cover z-10 transition-transform duration-700 ease-in-out group-hover:translate-x-full" />
+      <!-- BEFORE image -->
+      <img src="images/before1.jpg"
+           class="absolute top-0 left-0 w-full h-full object-cover z-10 transition-transform duration-700 ease-in-out group-hover:translate-x-full" />
+      
+      <!-- Label ONLY on BEFORE -->
+      <div class="absolute inset-0 z-20 flex items-center justify-center text-center text-white text-sm font-semibold bg-black/40 transition-opacity duration-500 group-hover:opacity-0">
+        רחף עם העכבר או גע כדי לראות את אחרי ✨
       </div>
-  
-      <!-- Card 2 -->
-      <div class="relative w-full aspect-square overflow-hidden rounded-2xl shadow-lg group">
-        <img src="images/after2.jpg" class="absolute top-0 left-0 w-full h-full object-cover" />
-        <img src="images/before2.jpg"
-             class="absolute top-0 left-0 w-full h-full object-cover z-10 transition-transform duration-700 ease-in-out group-hover:translate-x-full" />
-      </div>
-  
-      <!-- Card 3 -->
-      <div class="relative w-full aspect-square overflow-hidden rounded-2xl shadow-lg group">
-        <img src="images/after3.jpg" class="absolute top-0 left-0 w-full h-full object-cover" />
-        <img src="images/before3.jpg"
-             class="absolute top-0 left-0 w-full h-full object-cover z-10 transition-transform duration-700 ease-in-out group-hover:translate-x-full" />
-      </div>
-  
     </div>
-  </section>
-  
-  
+
+    <!-- Card 2 -->
+    <div class="relative w-full aspect-square overflow-hidden rounded-2xl shadow-lg group">
+      <img src="images/after2.jpg" class="absolute top-0 left-0 w-full h-full object-cover z-0" />
+      <img src="images/before2.jpg"
+           class="absolute top-0 left-0 w-full h-full object-cover z-10 transition-transform duration-700 ease-in-out group-hover:translate-x-full" />
+      <div class="absolute inset-0 z-20 flex items-center justify-center text-center text-white text-sm font-semibold bg-black/40 transition-opacity duration-500 group-hover:opacity-0">
+        רחף עם העכבר או גע כדי לראות את אחרי ✨
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="relative w-full aspect-square overflow-hidden rounded-2xl shadow-lg group">
+      <img src="images/after3.jpg" class="absolute top-0 left-0 w-full h-full object-cover z-0" />
+      <img src="images/before3.jpg"
+           class="absolute top-0 left-0 w-full h-full object-cover z-10 transition-transform duration-700 ease-in-out group-hover:translate-x-full" />
+      <div class="absolute inset-0 z-20 flex items-center justify-center text-center text-white text-sm font-semibold bg-black/40 transition-opacity duration-500 group-hover:opacity-0">
+        רחף עם העכבר או גע כדי לראות את אחרי ✨
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- Reviews Carousel -->
 <section id="reviews" class="bg-gray-100 py-20 px-6" data-aos="fade-up">
